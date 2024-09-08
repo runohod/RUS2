@@ -1,4 +1,4 @@
-:point_right: **[RUS2](https://github.com/runohod/RUS2.git)**
+:point_right: **[RUS2](https://runohod.github.io/RUS2 )**
 + Создана страница c использованием html css js
 + С соблюдением валидности кода
 + Реализована анимация картинок на последнем блоке 
