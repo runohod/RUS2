@@ -1,27 +1,21 @@
-const galleryTrack = document.querySelector('.gallery-track');
-const galleryItems = document.querySelectorAll('.gallery-item');
-const galleryTrack2 = document.querySelector('.gallery-track-two');
+const track = document.querySelector('.carousel-track');
+const trackTwo = document.querySelector('.carousel-track-two');
+const images = document.querySelectorAll('.carousel-image');
 
-function cloneItems() {
-    galleryItems.forEach(item => {
-        const clone = item.cloneNode(true);
-        galleryTrack.appendChild(clone);
-        galleryTrack2.appendChild(clone);
+let currentIndex = 0;
 
-    });
+function moveToNextImage() {
+    currentIndex++;
+    
+    if (currentIndex >= images.length) {
+        currentIndex = 0; // Если дошли до конца, начать сначала
+    }
+
+    // Перемещаем карусель
+    const offset = -currentIndex * 50; // По 50% ширины изображения
+    track.style.transform = `translateX(${offset}%)`;
 }
 
-cloneItems();
-
-// const galleryTrack2 = document.querySelector('.gallery-track-two');
-
-// function cloneItems() {
-//     galleryItems.forEach(item => {
-//         const clone = item.cloneNode(true);
-//         galleryTrack2.appendChild(clone);
-//     });
-// }
-
-// cloneItems();
-
+// Запускаем автоматическую прокрутку каждые 3 секунды
+setInterval(moveToNextImage, 3000);
 
