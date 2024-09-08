@@ -143,13 +143,13 @@ h1 {
     font-weight: bold;
 }
 
-
 .flex {
     display: flex;
 }
 
 .content_info-block {
     padding: 50px;
+    padding-left: 65px;
 }
 
 .content__logos {
