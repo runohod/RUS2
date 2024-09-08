@@ -14,14 +14,14 @@ function cloneItems() {
 cloneItems();
 
 // const galleryTrack2 = document.querySelector('.gallery-track-two');
-//
+
 // function cloneItems() {
 //     galleryItems.forEach(item => {
 //         const clone = item.cloneNode(true);
 //         galleryTrack2.appendChild(clone);
 //     });
 // }
-//
+
 // cloneItems();
 
 
